@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>All bitcoin private keys</title>
+	<meta charset="utf8" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<style>
+		body{font-size: 9pt; font-family: 'Open Sans', sans-serif;}
+		a{text-decoration: none}
+		a:hover {text-decoration: underline}
+		.keys > span:hover { background: #f0f0f0; }
+		span:target { background: #ccffcc; }
+		.highlight {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+
+<h1>Bitcoin private key database</h1>
+<h2 id="h2">Page 1 out of 904625697166532776746648320380374280100293470930272690489102837043110636675</h2>
+
+<button type="submit" id="btn_goto">goto</button> <input type="text" id="page_num" name="page"/> <br/><br/>
+<button type="submit" id="btn_search">search</button> <input type="text" id="privkey" name="privkey"/> <br/><br/>
+<button type="submit" id="rand_jump">lucky draw!</button> <br/><br/>
+
+<a href="#", id="prev_page">previous</a> | <a href="#", id="next_page">next</a>
+<pre class="keys" id="items">
+<strong>Private Key</strong>                                            <strong>Address</strong>                            <strong>Balance</strong>
+</pre>
+<pre style="margin-top: 1em; font-size: 8pt">
+It took a lot of computing power to generate this database. Donations welcome: 1KdLuxnn996xD5STwxaxnBWajS4KsTXtGN
+</pre>
+<a href="#", id="prev_page">previous</a> | <a href="#", id="next_page">next</a>
+<script src="./bignumber.js"></script>
+<script src="./bitcoinjs-min.js"></script>
+<script src="./btc.min.js"></script>
+<script src="./app.min.js"></script>
+</body>
+</html>
