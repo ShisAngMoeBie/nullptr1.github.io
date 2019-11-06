@@ -1,0 +1,1 @@
+Bitcoin private key database.
